@@ -20,7 +20,14 @@
     fetch(gateUrl, {cache:"no-store"})
       .then(function(response){return response.json()})
       .then(function(data){
-        if(data.active && data.destination){location.replace(data.destination);return}
+        if(data.active && data.destination){
+          var destination = new URL(data.destination);
+          new URLSearchParams(location.search).forEach(function(value,key){
+            if(/^utm_/i.test(key)){destination.searchParams.set(key,value)}
+          });
+          location.replace(destination.toString());
+          return;
+        }
         location.replace(notFoundPath);
       })
       .catch(function(){
